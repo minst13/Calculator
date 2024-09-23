@@ -66,7 +66,7 @@ keys.addEventListener("click", e => {
                 previousKeyType !== 'calculate'
             ) {
                 const resultValue = calculate(value_one, operator, value_two)
-                display.textContent = resultValue + + keyContent;
+                display.textContent = resultValue + keyContent;
                 calculator.dataset.value_one = resultValue;
             }
             else {
