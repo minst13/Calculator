@@ -78,8 +78,8 @@ keys.addEventListener("click", e => {
 
             key.classList.add("inactive");
             console.log(key, key.dataset.action);
-            calculator.dataset.previousKeyType = 'operator'
-            calculator.dataset.operator = action
+            calculator.dataset.previousKeyType = 'operator';
+            calculator.dataset.operator = action;
         }
         if (action === "add") {
             displayCurrent + "+"
@@ -105,9 +105,9 @@ keys.addEventListener("click", e => {
         }
 
         if (action === "calculate") {
-            let value_one = calculator.dataset.value_one
-            const operator = calculator.dataset.operator
-            const value_two = displayCurrent
+            let value_one = calculator.dataset.value_one;
+            const operator = calculator.dataset.operator;
+            const value_two = displayCurrent;
 
             if (value_one) {
                 if (previousKeyType === "calculate") {
