@@ -1,6 +1,8 @@
 const calculator = document.querySelector(".calculator")
 const keys = calculator.querySelector(".calculator__keys")
 
+
+
 const display = document.querySelector(".calculator__display")
 const calculate = (num1, operator, num2) => {
     let result = " "
@@ -70,6 +72,7 @@ keys.addEventListener("click", e => {
                 calculator.dataset.value_one = resultValue;
             }
             else {
+                display.textContent = displayCurrent + keyContent;
                 calculator.dataset.value_one = displayCurrent
             }
 
@@ -78,7 +81,9 @@ keys.addEventListener("click", e => {
             calculator.dataset.previousKeyType = 'operator'
             calculator.dataset.operator = action
         }
-
+        if (action === "add") {
+            displayCurrent + "+"
+        }
 
         if (action === "clear") {
             if (key.textContent === "AC") {
