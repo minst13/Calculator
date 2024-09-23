@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator__display">0</div>
+
+            <div class="calculator__keys">
+                <button class="key--operator" data-action="add" id="addition">+</button>
+                <button class="key--operator" data-action="subtract" id="subtract">-</button>
+                <button class="key--operator" data-action="multiply" id="multiply">&times;</button>
+                <button class="key--operator" data-action="divide" id="divide">÷</button>
+                <button class="numkeys btn7">7</button>
+                <button class="numkeys btn8">8</button>
+                <button class="numkeys btn9">9</button>
+                <button class="numkeys btn4">4</button>
+                <button class="numkeys btn5">5</button>
+                <button class="numkeys btn6">6</button>
+                <button class="numkeys btn1">1</button>
+                <button class="numkeys btn2">2</button>
+                <button class="numkeys btn3">3</button>
+                <button class="numkeys btn0">0</button>
+                <button data-action="decimal">.</button>
+                <button data-action="clear">AC</button>
+                <button class="key--equal" data-action="calculate" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
