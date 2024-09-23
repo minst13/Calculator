@@ -81,9 +81,6 @@ keys.addEventListener("click", e => {
             calculator.dataset.previousKeyType = 'operator';
             calculator.dataset.operator = action;
         }
-        if (action === "add") {
-            displayCurrent + "+"
-        }
 
         if (action === "clear") {
             if (key.textContent === "AC") {
